@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './Components/header/header'
+import SearchPanel from './Components/search-panel/search-panel'
+import News from './Components/news/news'
+import data from './Components/Mock/Mock'
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="my-container">
+      <Header />
+      <SearchPanel />
+      <News data = {data}/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
