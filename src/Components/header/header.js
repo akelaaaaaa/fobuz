@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import {
     Collapse,
     Navbar,
@@ -12,51 +12,51 @@ import {
     DropdownMenu,
     DropdownItem,
     NavbarText
-  } from 'reactstrap';
+} from 'reactstrap';
 
 
 
-  const Header = () => {
-      const[isOpen, setIsOpen] = useState(false)
+const Header = () => {
+    const [isOpen, setIsOpen] = useState(false)
 
-      const toggle = () => setIsOpen(!isOpen)
-    
-      return (
-          <>
+    const toggle = () => setIsOpen(!isOpen)
+
+    return (
+        <>
             <Navbar color="dark" dark expand="md">
-                <NavbarBrand href="">Marvel/DC</NavbarBrand>
+                <NavbarBrand href="/home">Marvel/DC</NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="mr-auto" navbar>
                         <NavItem>
-                        <NavLink href="">Новости</NavLink>
+                            <NavLink href="">Новости</NavLink>
                         </NavItem>
                         <NavItem>
-                        <NavLink href="">Еще что-нибудь</NavLink>
+                            <NavLink href="/top_movies">Лучшие фильмы</NavLink>
                         </NavItem>
                         <UncontrolledDropdown nav inNavbar>
-                        <DropdownToggle nav caret>
-                            Еще чето там
-                        </DropdownToggle>
-                        <DropdownMenu right>
-                            <DropdownItem>
-                            ААААА
-                            </DropdownItem>
-                            <DropdownItem>
-                            Лол
-                            </DropdownItem>
-                            <DropdownItem divider />
-                            <DropdownItem>
-                                Я под палочкой
-                            </DropdownItem>
-                        </DropdownMenu>
+                            <DropdownToggle nav caret>
+                                Еще чето там
+                            </DropdownToggle>
+                            <DropdownMenu right>
+                                <DropdownItem>
+                                    ААААА
+                                </DropdownItem>
+                                <DropdownItem>
+                                    Лол
+                                </DropdownItem>
+                                <DropdownItem divider />
+                                <DropdownItem>
+                                    Я под палочкой
+                                </DropdownItem>
+                            </DropdownMenu>
                         </UncontrolledDropdown>
                     </Nav>
                     <NavbarText>Simple Text</NavbarText>
                 </Collapse>
             </Navbar>
-          </>
-      )
-  }
+        </>
+    )
+}
 
-  export default Header
+export default Header

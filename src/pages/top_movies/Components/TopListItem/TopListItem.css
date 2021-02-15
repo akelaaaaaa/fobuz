@@ -1,0 +1,19 @@
+.image {
+	width: 50px;
+	height: 50px;
+}
+
+.media-item {
+	margin-bottom: 15px;
+	background-color: white ;
+	height: 50px;
+}
+
+.movie-name {
+	
+}
+
+.rating {
+	color: red;
+	float: right;
+}

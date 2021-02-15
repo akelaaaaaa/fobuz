@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('./img/background.jpg');
 }
 
 code {
@@ -12,6 +13,3 @@ code {
     monospace;
 }
 
-.my-container {
-  background-image: url('./img/background.jpg');
-}
