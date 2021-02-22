@@ -1,7 +1,15 @@
 import React from 'react'
 import { Media } from 'reactstrap';
 import './TopListItem.css'
-const TopListItem = ({ title, number, rating, img }) => {
+
+interface Props {
+	title: string,
+	number: number, 
+	rating: string, 
+	img: string
+}
+
+const TopListItem:React.FC <Props> = ({ title, number, rating, img }) => {
 	return (
 		<Media className="media-item">
 			<Media left href="#">

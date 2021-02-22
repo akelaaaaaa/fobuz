@@ -5,9 +5,14 @@ import {
     Modal, ModalHeader, ModalBody
 } from 'reactstrap';
 
+interface Props {
+    title: string, 
+    text: string, 
+    date: string, 
+    img: string
+}
 
-
-const NewsCard = ({ title, text, date, img }) => {
+const NewsCard:React.FC<Props> = ({ title, text, date, img }) => {
 
     const [modal, setModal] = useState(false);
 
